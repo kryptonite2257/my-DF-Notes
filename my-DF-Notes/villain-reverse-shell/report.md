@@ -3,15 +3,15 @@
 ## ⚙️ Setup Info
 - Payload: `windows/reverse_tcp/powershell`
 - LHOST: 192.168.56.1
-- LPORT: 192.168.56.101
+- LPORT: 4444
 
 ## 🔁 Payload Delivery Method
-- he payload  was hosted on the Kali attacker machine via Python’s built-in HTTP server (python3 -m http.server 8000).
-On the Windows 10 target VM, PowerShell 
+- The generated PowerShell payload was transferred to the target Windows 10 VM and executed through a local PowerShell console.
+Upon execution, the payload established a reverse TCP connection back to the attacker's Kali Linux machine running Villain.
 
 ## 🖥️ Captured Info
-- Hostname: _value_
-- IP Address: _value_
+- Hostname: KRISHNA
+- IP Address: 192.168.56.101
 - User: _value_
 
 ## 🔎 Enumeration Performed
